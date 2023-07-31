@@ -1,0 +1,139 @@
+body {
+	margin: 0;
+	padding-top: 3.5rem;
+	background-color: black;
+}
+
+																/* -NavBar- */  
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-self: flex-start;
+ 	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	width: 100vw;
+	box-shadow: 0 0 10px #363636;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0px;
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.navLogo {
+	display: flex;
+	list-style-type: none;
+	width: 15vw;
+	height: 8vh;
+	cursor: pointer;
+}
+
+/*		Navbar Buttons (home, etc.)		*/
+.navItem{
+	display: flex;
+	padding: 1rem 2.5rem;
+	margin: 0;
+	color: white;
+	background-color: black;
+	cursor: pointer;
+}
+
+/*navbar items hover attributes */
+.navItem:hover{
+background-color: #252626;
+color: white;
+}
+
+/*dropdown for npcs*/
+.dropdownNpcs {
+	position: absolute;
+	top:3.5rem;
+	left: 7.5rem;
+	width: 5rem;
+}
+
+/* hover attributes for npcs dropdown (must hover over npcs)*/
+#Npcs:hover > .dropdownNpcs{
+display: flex;
+}
+
+
+/*dropdown for weapons & spells*/
+.dropdownWS {
+	position: absolute;
+	top:3.5rem;
+	left: 14.5rem;
+	width: 10.5rem;
+
+}
+
+#WS:hover > .dropdownWS{
+display: flex;
+}
+
+
+#dropdown-content {
+	color: white;
+	text-decoration: inherit;
+}
+
+#dropdown-items {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1rem;
+	gap: 1rem;
+	border: 4px outset grey;
+	background-color: #252626;
+	align-items: center;
+	box-shadow: 0 0 10px #363636;
+}
+
+
+																		/* -HomePage- */
+
+.ER {
+	width: 20vw;
+	height: 25vh;
+}
+
+.main-box {
+	border: 2px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: center;
+	height: 75vh;
+	background-image: linear-gradient(black, grey, white);
+
+}
+
+.rows{
+	display: flex;
+	flex-grow: 1;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.break{
+	flex-basis: 100%;
+	height: 0;
+}
+
+#sub-boxes{
+	color: white;
+	border: 2px solid rosybrown;
+	width: 10rem;
+	height: 10rem;
+	margin: 1rem;
+	background-image: url("https://static.bandainamcoent.eu/high/elden-ring/elden-ring/00-page-setup/elden-ring-new-header-mobile.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
